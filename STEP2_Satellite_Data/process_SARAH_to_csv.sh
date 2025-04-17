@@ -7,7 +7,7 @@
 # https://wui.cmsaf.eu/safira/action/viewUserOrderList
 # Oreder manual and then an email comes to neuralio with the wget command, the wget is 
 # available for few days 
-# wget: wget -r -np -nH --cut-dirs=1 --reject="index.html" --user=routcm --password=4gVdHUdpq8UhHcIJIP https://cmsaf.dwd.de/data/ORD49425/
+# wget: wget -r -np -nH --cut-dirs=1 --reject="index.html" --user=$user --password=$password https://cmsaf.dwd.de/data/ORD49425/
 ##### 
 
 ## Path to Satellite GHI data
