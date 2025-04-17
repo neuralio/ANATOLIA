@@ -75,27 +75,31 @@ STEP5_Training/           # Model training & anomaly detection
 
     - Train LSTM autoencoder on normal operation to learn typical temporal patterns.
 
-    ![Loss.png]
+    ![Loss](https://github.com/neuralio/ANATOLIA/blob/main/Plots/Loss.png)
 
-![Training & Validation Loss](Screenshots/Screenshot 2025-04-17 at 2.41.45 PM.png)
+    - Compute reconstruction error & set anomaly threshold (e.g. mean + 3σ).
 
-Compute reconstruction error & set anomaly threshold (e.g. mean + 3σ).
+    - Detect and visualise anomalies
+      
+    ![Reconstruction Error & Detected Anomalies](https://github.com/neuralio/ANATOLIA/blob/main/Plots/Error_and_anomalies.png)
 
-Detect and visualise anomalies:
+6. Forecasting & Live Monitoring
 
-![Reconstruction Error & Detected Anomalies](Screenshots/Screenshot 2025-04-17 at 2.43.17 PM.png)
+    - Download GFS forecasts
 
-– Forecasting & Live Monitoring
+    - Predict next-day yield and trend using the trained LSTM model.
 
-Download GFS forecast (STEP7 in pipeline; script available in STEP5_Training/Predict_detect.ipynb).
+![True vs Predicted Yield](https://github.com/neuralio/ANATOLIA/blob/main/Plots/True_VS_Predicted_Yield.png)
 
-Predict next-day yield and trend using the trained LSTM model.
+![Modeled vs Actual Trend](https://github.com/neuralio/ANATOLIA/blob/main/Plots/Model_VS_True_trend.png)
 
-![True vs Predicted Yield](Screenshots/Screenshot 2025-04-17 at 2.42.34 PM.png)
+# ⚙️ Requirements
 
-![Modeled vs Actual Trend](Screenshots/Screenshot 2025-04-17 at 2.42.04 PM.png)
+- Python: 3.8+
+- Key packages (install via pip or conda):
+```numpy, pandas, xarray, netCDF4, requests, cdsapi, tensorflow (or keras), matplotlib, scikit-learn, jupyterlab```
+- Shell utilities for batch downloads (bash)
 
-STEP 8: Fetch live plant data daily and flag anomalies in real time.
 
 
 
