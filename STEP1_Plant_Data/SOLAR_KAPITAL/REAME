@@ -1,0 +1,8 @@
+SOS: be carefull of rmtree -- if you re-run it for spcefic dates it will rease all the folder!!!
+1. Agioi10: Data from 2011 to 2017  -- YES y
+2. Arnisaa: only 2019 to 2023 and not functional selenium  -- WORKS FROM ipynb 
+3. Lagos: from 2011 to 2017        -- YES y 
+4. PALAIOL: from 2011 to 2017      -- YES y
+5. SITIA: 2011- 2017               -- YES running  
+6. Larissa: 2020 -2023 and not functional  --- WORKS FROM ipynb problesm in terminal 
+7. Radi --- in jupyter next to do : -- NO private connection issues
