@@ -48,8 +48,8 @@ driver.get('https://www.auroravision.net/dashboard/#23301964')
 # ---- Log in 
 username_field = driver.find_element(By.ID, "userId")
 password_field = driver.find_element(By.ID,"password") 
-username_field.send_keys('nikolaospapazoglou')
-password_field.send_keys('YIELD1sk!@#')
+username_field.send_keys('<userID>')
+password_field.send_keys('<password>')
 password_field.send_keys(Keys.RETURN)
 
 time.sleep(20)

@@ -48,8 +48,8 @@ driver.get('https://www.sunnyportal.com/Templates/Start.aspx?ReturnUrl=%2f')
 # ---- Log in 
 username_field = driver.find_element(By.ID, "txtUserName")
 password_field = driver.find_element(By.ID,"txtPassword") 
-username_field.send_keys('a.leimbach@t-online.de')
-password_field.send_keys('EF1899fg!!')
+username_field.send_keys('<userID>')
+password_field.send_keys('<password>')
 password_field.send_keys(Keys.RETURN)
 
 # Navigate to the Specific PLANT
